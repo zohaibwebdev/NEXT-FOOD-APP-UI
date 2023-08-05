@@ -36,7 +36,7 @@ const Menu = () => {
         )}
       </div>
       {open && (
-        <nav className="bg-red-500 text-white absolute left-0 top-24 w-full h-[calc(100vh-6rem)] flex flex-col gap-8 justify-center items-center text-3xl z-10">
+        <nav className="bg-red-500 text-white absolute left-0 top-24 w-full h-[calc(100vh-6rem)] flex flex-col gap-8 justify-center items-center text-2xl z-10">
           {links.map((link) => (
             <Link href={link.url} key={link.id} onClick={() => setOpen(false)}>
               {link.title}
